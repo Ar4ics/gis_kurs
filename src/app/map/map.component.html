@@ -1,0 +1,11 @@
+<div id="map" class="map">
+  <div id="control">
+    <ul>
+      <li *ngFor="let layer of layers">
+        <input type="checkbox" value="layer.isChecked" (click)="onRowClicked(layer)" />
+
+        {{ layer.Name }}
+      </li>
+    </ul>
+  </div>
+</div>
